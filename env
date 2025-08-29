@@ -1,0 +1,12 @@
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = (
+    r"C:/Users/DELL/OneDrive/Documents/B191333/Blackcoffer/Training_tasks/18.Vocode/vocodechatbot-3c549ed703c9.json"
+)
+
+# ------------------ Settings ------------------
+class Settings(BaseSettings):
+    deepgram_api_key: str = os.getenv(
+        "DEEPGRAM_API_KEY", "64674069c7561d554c72b5940cb0bb0cfd9d56d0"
+    )
+    google_api_key: str = os.getenv(
+        "GOOGLE_API_KEY", "AIzaSyAjRP0GuOejUiR2l-BHpcfX8ilPCDrMTZ0"
+    )
