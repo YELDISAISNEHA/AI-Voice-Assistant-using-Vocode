@@ -22,8 +22,8 @@ from vocode.streaming.streaming_conversation import StreamingConversation
 configure_pretty_logging()
 
 class Settings(BaseSettings):
-    gemini_api_key: str = "AIzaSyAjRP0GuOejUiR2l-BHpcfX8ilPCDrMTZ0"
-    deepgram_api_key: str = "64674069c7561d554c72b5940cb0bb0cfd9d56d0"
+    gemini_api_key: str = "API_KEY"
+    deepgram_api_key: str = "API_KEY"
     google_credentials_json: str = r"C:/Users/DELL/OneDrive/Documents/B191333/Blackcoffer/Training_tasks/18.Vocode/vocodechatbot-3c549ed703c9.json"
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
@@ -139,3 +139,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
